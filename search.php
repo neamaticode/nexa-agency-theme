@@ -22,11 +22,11 @@ get_header();
 			</h1>
 			<p class="nexa-search-header__count">
 				<?php
-				$found = $wp_query->found_posts; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+				$found_posts = $wp_query->found_posts; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 				printf(
 					/* translators: 1: Found count, 2: Search query */
-					esc_html( _n( 'Found <strong>%1$s</strong> result for "%2$s"', 'Found <strong>%1$s</strong> results for "%2$s"', $found, 'nexa-agency' ) ),
-					esc_html( number_format_i18n( $found ) ),
+					esc_html( _n( 'Found <strong>%1$s</strong> result for "%2$s"', 'Found <strong>%1$s</strong> results for "%2$s"', $found_posts, 'nexa-agency' ) ),
+					esc_html( number_format_i18n( $found_posts ) ),
 					esc_html( get_search_query() )
 				);
 				?>

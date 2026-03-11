@@ -119,7 +119,7 @@ $social_links     = nexa_social_links( false );
 						printf(
 							/* translators: 1: Year, 2: Site name */
 							esc_html__( '&copy; %1$s %2$s. All rights reserved.', 'nexa-agency' ),
-							esc_html( gmdate( 'Y' ) ),
+							esc_html( date_i18n( 'Y' ) ),
 							'<a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a>'
 						);
 					}

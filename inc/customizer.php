@@ -44,7 +44,7 @@ function nexa_customizer_register( $wp_customize ) {
 		'accent_color'    => array( '#3ecfcf', esc_html__( 'Accent Color', 'nexa-agency' ) ),
 	);
 
-	foreach ( $color_settings as $key => list( $default, $label ) ) {
+	foreach ( $color_settings as $key => [ $default, $label ] ) {
 		$wp_customize->add_setting(
 			$key,
 			array(
@@ -250,7 +250,7 @@ add_action( 'customize_register', 'nexa_customizer_register' );
  * @param array                $fields       Array of field_key => [default, label, type].
  */
 function nexa_register_customizer_fields( $wp_customize, $section, $fields ) {
-	foreach ( $fields as $key => list( $default, $label, $type ) ) {
+	foreach ( $fields as $key => [ $default, $label, $type ] ) {
 		$sanitize = 'url' === $type ? 'esc_url_raw' : ( 'email' === $type ? 'sanitize_email' : ( 'textarea' === $type ? 'sanitize_textarea_field' : 'sanitize_text_field' ) );
 
 		$wp_customize->add_setting(

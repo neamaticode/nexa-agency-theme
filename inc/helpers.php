@@ -36,7 +36,7 @@ function nexa_social_links( $echo = true ) {
 	);
 
 	$html = '';
-	foreach ( $networks as $key => list( $label, $icon ) ) {
+	foreach ( $networks as $key => [ $label, $icon ] ) {
 		$url = nexa_get_customizer( $key, '' );
 		if ( $url ) {
 			$html .= sprintf(

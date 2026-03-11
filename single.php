@@ -29,15 +29,15 @@ get_header();
 							?>
 						</span>
 						<span>
-							<a href="<?php comments_link(); ?>">
-								<?php
-								printf(
-									/* translators: %s: Comment count */
-									esc_html( _n( '%s Comment', '%s Comments', get_comments_number(), 'nexa-agency' ) ),
-									esc_html( number_format_i18n( get_comments_number() ) )
-								);
-								?>
-							</a>
+							<?php
+							$comments_count = get_comments_number();
+							$comments_text  = sprintf(
+								/* translators: %s: Comment count */
+								esc_html( _n( '%s Comment', '%s Comments', $comments_count, 'nexa-agency' ) ),
+								esc_html( number_format_i18n( $comments_count ) )
+							);
+							?>
+							<a href="<?php comments_link(); ?>"><?php echo esc_html( $comments_text ); ?></a>
 						</span>
 					</div>
 
