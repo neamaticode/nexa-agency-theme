@@ -1,0 +1,565 @@
+/* ==============================================
+   RESPONSIVE STYLES - NexaAgency Theme
+   Desktop-first approach
+   ============================================== */
+
+/* ==============================================
+   1400px - Extra Large Desktop
+   ============================================== */
+@media (max-width: 1400px) {
+	:root {
+		--container-max: 1160px;
+	}
+
+	.nexa-team__grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.nexa-footer__grid {
+		grid-template-columns: 1.2fr 1fr 1fr 1fr;
+		gap: 2rem;
+	}
+}
+
+/* ==============================================
+   1200px - Large Desktop / Small Laptop
+   ============================================== */
+@media (max-width: 1200px) {
+	:root {
+		--spacing-xxl: 5rem;
+	}
+
+	.nexa-hero__title {
+		font-size: clamp(2.2rem, 5.5vw, 4rem);
+	}
+
+	.nexa-services__grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.25rem;
+	}
+
+	.nexa-about__inner {
+		gap: 3.5rem;
+	}
+
+	.nexa-portfolio__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.nexa-stats__grid {
+		gap: 1.5rem;
+	}
+
+	.nexa-footer__grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2.5rem;
+	}
+
+	.nexa-footer__brand {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		align-items: start;
+	}
+}
+
+/* ==============================================
+   992px - Tablet Landscape
+   ============================================== */
+@media (max-width: 992px) {
+	:root {
+		--header-height:  72px;
+		--spacing-xxl:    4.5rem;
+		--spacing-xl:     3rem;
+	}
+
+	/* Header */
+	.nexa-nav,
+	.nexa-header__cta {
+		display: none;
+	}
+
+	.nexa-hamburger {
+		display: flex;
+	}
+
+	/* Hero */
+	.nexa-hero__inner {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.nexa-hero__stats {
+		gap: 2rem;
+	}
+
+	/* Services */
+	.nexa-services__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* About */
+	.nexa-about__inner {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	.nexa-about__visual {
+		order: -1;
+		max-width: 500px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.nexa-about__badge {
+		left: 0;
+	}
+
+	/* Stats */
+	.nexa-stats__grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.25rem;
+	}
+
+	/* Portfolio */
+	.nexa-portfolio__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Team */
+	.nexa-team__grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.25rem;
+	}
+
+	/* Testimonials */
+	.nexa-testimonials__grid {
+		grid-template-columns: 1fr;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	/* Pricing */
+	.nexa-pricing__grid {
+		grid-template-columns: 1fr;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.nexa-pricing-card--featured {
+		transform: scale(1);
+		order: -1;
+	}
+
+	.nexa-pricing-card--featured:hover {
+		transform: translateY(-4px);
+	}
+
+	/* Blog */
+	.nexa-blog-preview__grid,
+	.nexa-blog-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Contact */
+	.nexa-contact__inner {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	/* Footer */
+	.nexa-footer__grid {
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.nexa-footer__brand {
+		grid-column: 1 / -1;
+		display: block;
+	}
+
+	/* Post navigation */
+	.nexa-post-navigation {
+		grid-template-columns: 1fr;
+	}
+
+	.nexa-post-navigation__item--next {
+		text-align: left;
+	}
+}
+
+/* ==============================================
+   768px - Tablet Portrait
+   ============================================== */
+@media (max-width: 768px) {
+	:root {
+		--spacing-xxl:    3.5rem;
+		--spacing-xl:     2.5rem;
+		--spacing-lg:     1.25rem;
+	}
+
+	/* Header */
+	.nexa-header__inner {
+		padding: 0 1.25rem;
+	}
+
+	/* Hero */
+	.nexa-hero {
+		min-height: auto;
+		padding-bottom: 3rem;
+	}
+
+	.nexa-hero__inner {
+		padding: 3rem 1.25rem;
+	}
+
+	.nexa-hero__badge {
+		font-size: 0.78rem;
+	}
+
+	.nexa-hero__cta {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.75rem;
+	}
+
+	.nexa-hero__cta .nexa-btn {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.nexa-hero__stats {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1.5rem;
+	}
+
+	.nexa-hero__stat-number {
+		font-size: 1.6rem;
+	}
+
+	/* Services */
+	.nexa-services__grid {
+		grid-template-columns: 1fr;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	/* Portfolio */
+	.nexa-portfolio__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.nexa-portfolio__filters {
+		gap: 0.5rem;
+	}
+
+	/* Team */
+	.nexa-team__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Testimonials */
+	.nexa-testimonials__grid {
+		max-width: 100%;
+	}
+
+	/* Blog */
+	.nexa-blog-preview__grid,
+	.nexa-blog-grid {
+		grid-template-columns: 1fr;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	/* Contact form */
+	.nexa-form__row {
+		grid-template-columns: 1fr;
+	}
+
+	/* Footer */
+	.nexa-footer__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.nexa-footer__bottom-inner {
+		flex-direction: column;
+		text-align: center;
+		gap: 0.75rem;
+	}
+
+	/* 404 */
+	.nexa-404__number {
+		font-size: clamp(5rem, 22vw, 10rem);
+	}
+
+	/* Scroll top */
+	.nexa-scroll-top {
+		bottom: 1.25rem;
+		right: 1.25rem;
+	}
+
+	/* Author box */
+	.nexa-author-box {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.nexa-author-box__avatar {
+		margin: 0 auto;
+	}
+
+	/* Section header */
+	.nexa-section-subtitle {
+		font-size: 0.95rem;
+	}
+}
+
+/* ==============================================
+   576px - Large Mobile
+   ============================================== */
+@media (max-width: 576px) {
+	:root {
+		--spacing-xxl: 3rem;
+		--spacing-xl:  2rem;
+	}
+
+	/* Portfolio */
+	.nexa-portfolio__grid {
+		grid-template-columns: 1fr;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	/* Team */
+	.nexa-team__grid {
+		grid-template-columns: 1fr;
+		max-width: 340px;
+		margin: 0 auto;
+	}
+
+	/* Stats */
+	.nexa-stats__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* Hero stats */
+	.nexa-hero__stats {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+	}
+
+	/* Pricing */
+	.nexa-pricing__grid {
+		max-width: 100%;
+	}
+
+	/* Contact info */
+	.nexa-contact__info-item {
+		align-items: flex-start;
+	}
+
+	/* Section title */
+	.nexa-section-title {
+		font-size: 1.7rem;
+	}
+
+	/* Mobile nav */
+	.nexa-mobile-nav {
+		padding: 1.5rem;
+	}
+
+	.nexa-mobile-nav__menu a {
+		font-size: 1.1rem;
+	}
+
+	/* Post card */
+	.nexa-post-card__meta {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	/* About badge */
+	.nexa-about__badge {
+		position: static;
+		margin-top: 1.25rem;
+		display: inline-block;
+	}
+}
+
+/* ==============================================
+   480px - Small Mobile
+   ============================================== */
+@media (max-width: 480px) {
+	body {
+		font-size: 0.95rem;
+	}
+
+	.nexa-container,
+	.nexa-container--wide {
+		padding: 0 1rem;
+	}
+
+	.nexa-hero__inner {
+		padding: 2.5rem 1rem;
+	}
+
+	.nexa-hero__title {
+		font-size: 2rem;
+	}
+
+	.nexa-hero__subtitle {
+		font-size: 0.95rem;
+	}
+
+	.nexa-btn {
+		padding: 0.75rem 1.5rem;
+		font-size: 0.88rem;
+	}
+
+	.nexa-btn--lg {
+		padding: 0.9rem 1.75rem;
+		font-size: 0.95rem;
+	}
+
+	.nexa-service-card {
+		padding: 1.75rem;
+	}
+
+	.nexa-contact__form-wrap {
+		padding: 1.75rem 1.25rem;
+	}
+
+	.nexa-pricing-card {
+		padding: 1.75rem 1.5rem;
+	}
+
+	.nexa-pricing-card__amount {
+		font-size: 2.5rem;
+	}
+
+	.nexa-stats__grid {
+		grid-template-columns: 1fr;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+
+	.nexa-footer__main {
+		padding: 3rem 0 2rem;
+	}
+
+	.nexa-footer__legal {
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	.nexa-search-form {
+		flex-direction: column;
+	}
+
+	.nexa-search-form input[type="search"],
+	.nexa-search-form button {
+		width: 100%;
+		border-radius: var(--radius-md);
+	}
+
+	.nexa-404__actions {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* ==============================================
+   RTL SUPPORT
+   ============================================== */
+[dir="rtl"] .nexa-about__inner {
+	direction: rtl;
+}
+
+[dir="rtl"] .nexa-about__badge {
+	left: auto;
+	right: -2rem;
+}
+
+[dir="rtl"] .nexa-about__feature {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nexa-service-card__link {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nexa-header__inner {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nexa-nav__menu {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nexa-hero__content {
+	text-align: right;
+}
+
+[dir="rtl"] .nexa-hero__cta {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nexa-hero__stats {
+	direction: rtl;
+}
+
+[dir="rtl"] .nexa-contact__inner {
+	direction: rtl;
+}
+
+[dir="rtl"] .nexa-footer__nav a:hover {
+	padding-left: 0;
+	padding-right: 4px;
+}
+
+[dir="rtl"] .nexa-footer__grid {
+	direction: rtl;
+}
+
+[dir="rtl"] .nexa-scroll-top {
+	right: auto;
+	left: 2rem;
+}
+
+[dir="rtl"] .nexa-entry-content blockquote {
+	border-left: none;
+	border-right: 3px solid var(--primary);
+	border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+[dir="rtl"] .nexa-breadcrumbs {
+	flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nexa-post-navigation__item--next {
+	text-align: left;
+}
+
+[dir="rtl"] .nexa-post-navigation__item--prev {
+	text-align: right;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+
+	.nexa-hero__shape,
+	.nexa-gradient-text,
+	.nexa-hero__badge-dot {
+		animation: none !important;
+	}
+}
