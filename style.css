@@ -1,0 +1,20 @@
+/*
+Theme Name: NexaAgency
+Theme URI: https://github.com/neamaticode/nexa-agency-theme
+Author: NexaThemes
+Author URI: https://github.com/neamaticode
+Description: A premium WordPress theme for digital agencies and startups. Fully featured with portfolio, services, team, and contact sections. Ready for ThemeForest.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nexa-agency
+Tags: agency, portfolio, one-page, dark, modern, custom-logo, custom-menu, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, rtl-language-support, editor-style, wide-blocks, block-styles
+*/
+
+/* Theme stylesheet - import main styles */
+@import url('assets/css/main.css');
+@import url('assets/css/animations.css');
+@import url('assets/css/responsive.css');
