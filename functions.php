@@ -37,6 +37,8 @@ function nexa_setup() {
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'elementor' );
+	add_theme_support( 'elementor-pro' );
 	add_theme_support(
 		'custom-background',
 		array(
@@ -75,3 +77,4 @@ require NEXA_DIR . '/inc/customizer.php';
 require NEXA_DIR . '/inc/widgets.php';
 require NEXA_DIR . '/inc/helpers.php';
 require NEXA_DIR . '/inc/ajax-handlers.php';
+require NEXA_DIR . '/inc/elementor-support.php';
