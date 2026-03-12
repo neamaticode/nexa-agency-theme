@@ -75,3 +75,19 @@ require NEXA_DIR . '/inc/customizer.php';
 require NEXA_DIR . '/inc/widgets.php';
 require NEXA_DIR . '/inc/helpers.php';
 require NEXA_DIR . '/inc/ajax-handlers.php';
+
+// Admin: onboarding, plugin activation helper, demo import.
+if ( is_admin() ) {
+	require NEXA_DIR . '/inc/tgmpa/class-tgm-plugin-activation.php';
+	require NEXA_DIR . '/inc/admin/admin-notices.php';
+	require NEXA_DIR . '/inc/admin/setup-page.php';
+	require NEXA_DIR . '/inc/admin/demo-import.php';
+
+	/**
+	 * Register required and recommended plugins.
+	 */
+	function nexa_register_plugins() {
+		nexathemes_register_required_plugins( nexathemes_get_plugin_list() );
+	}
+	add_action( 'init', 'nexa_register_plugins' );
+}

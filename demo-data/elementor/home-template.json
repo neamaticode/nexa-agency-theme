@@ -1,0 +1,14 @@
+{
+  "__nexathemes_placeholder": true,
+  "_comment": "THIS IS A PLACEHOLDER FILE — NOT A REAL ELEMENTOR TEMPLATE.",
+  "instructions": [
+    "1. Build your homepage in Elementor (Pages → Home → Edit with Elementor).",
+    "2. When done, go to: Elementor → My Templates (or use the Export Template option inside Elementor).",
+    "3. Export your Home template as a JSON file.",
+    "4. Replace THIS file (demo-data/elementor/home-template.json) with your exported JSON.",
+    "5. The demo import will then automatically apply the Elementor design to the Home page."
+  ],
+  "version": "0.0",
+  "title": "NexaThemes Home — Placeholder",
+  "content": []
+}
